@@ -1,0 +1,16 @@
+[
+  {
+    "id_gisement": 1,
+    "lib_gisement": "Chez Brice",
+    "desc_gisement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada libero eu odio dignissim lobortis. Vestibulum bibendum eleifend tellus quis commodo. Vestibulum quam libero, commodo varius enim nec, accumsan consectetur velit. Aliquam id elementum eros.",
+    "latitude": 49.77388333333333,
+    "longitude": 4.7190611111111114
+  },
+  {
+    "id_gisement": 2,
+    "lib_gisement": "Pôle Formation",
+    "desc_gisement": "Sed euismod malesuada ex, vel bibendum nibh fringilla eu. Integer euismod nisi sed semper aliquam. Nulla facilisi. Duis vitae risus leo. Sed sed feugiat lorem.",
+    "latitude": 49.739094,
+    "longitude": 4.720404
+  }
+]
