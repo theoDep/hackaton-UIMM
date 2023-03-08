@@ -12,26 +12,23 @@ const MarkerPopup = (props)=>{
   const { id_gisement } = props.data
   
   return (
-    <div class="max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-xl">
-  <div class="md:flex">
-    <div class="md:shrink-0">
+  
     <Popup>
-      <div className="text-center text-xl">{lib_gisement}</div>
+      <div className="text-center text-xl font-bold">{lib_gisement}</div>
       <div className="avatar flex m-5">
         <div className="w-40 rounded m-auto">
           <img src={ img_gisement } alt={lib_gisement}/>
         </div>
       </div>
-      <div className='m-2 text-center '>{desc_gisement}</div>
+      <div className='m-5 text-center line-clamp-3 w-48'>{desc_gisement}</div>
       <div className="flex m-2 ">
       <Link
-          className="m-auto btn btn-sm bg-[#702315] boutonpopup"
+          className="m-auto link text-[#702315] hover:text-[#49160d]"
           to={`/detail/${id_gisement}`}
           
-        >Voir plus</Link></div>
+        >En savoir +</Link></div>
     </Popup>
-    </div>
-    </div></div>
+
   )
 
 }

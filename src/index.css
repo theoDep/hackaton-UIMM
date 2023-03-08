@@ -8,8 +8,14 @@
 
   }
 
+.leaflet-container a {
+  color: none;
+}
+
   .boutonpopup {
     color: white !important;
   }
+
+  .leaflet-pane { z-index: 0 !important; }
 
 
