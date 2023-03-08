@@ -8,10 +8,7 @@ export default function KmSort({ handleKmSort, sortState, setSortState }) {
   }
 
   return (
-    <button
-      className="btn rounded-none bg-[#702315] hover:bg-[#49160d]"
-      onClick={() => handleKmClick(sortState)}
-    >
+    <button className="btn btn-primary rounded-none" onClick={() => handleKmClick(sortState)}>
       <span className="mr-2 text-xl">km</span>
       <div className="h-fit">
         <img

@@ -36,10 +36,7 @@ export default function CardList({ filteredGisements }) {
         </span>
         <h2 className="card-title">{gisement.lib_gisement}</h2>
         <p className="line-clamp-4 mb-2">{gisement.desc_gisement}</p>
-        <Link
-          className="btn btn-sm border-none bg-[#702315] hover:bg-[#49160d]"
-          to={`/detail/${gisement.id_gisement}`}
-        >
+        <Link className="btn btn-sm btn-primary border-none" to={`/detail/${gisement.id_gisement}`}>
           Voir plus
         </Link>
       </div>
