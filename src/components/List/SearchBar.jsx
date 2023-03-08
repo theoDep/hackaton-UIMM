@@ -56,7 +56,7 @@ export default function SearchBar({ gisements }) {
   }
 
   return (
-    <div className="font-sans text-black bg-white flex flex-col items-center justify-center">
+    <>
       <div className="border rounded overflow-hidden flex">
         <button className="flex items-center justify-center px-4 border-l">
           <svg
@@ -78,6 +78,6 @@ export default function SearchBar({ gisements }) {
         <KmSort handleKmSort={handleKmSort} sortState={sortState} setSortState={setSortState} />
       </div>
       <CardList filteredGisements={handleKmSort()} />
-    </div>
+    </>
   );
 }
