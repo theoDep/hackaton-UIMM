@@ -21,11 +21,11 @@ function Navbar() {
           <Link to="/">
             <FontAwesomeIcon icon={faHome} className="text-white" />
           </Link>
-          <Link to="/photo">
+          <Link to="/map">
             <FontAwesomeIcon icon={faMap} className="text-white" />
           </Link>
           <Link
-            to="/map"
+            to="/photo"
             className="bg-white text-3xl p-8 rounded-full border-[3px] border-[#702315]
         border-solid"
           >
