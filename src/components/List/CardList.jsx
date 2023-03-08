@@ -23,7 +23,7 @@ export default function CardList({ filteredGisements }) {
       <figure>
         <img
           className="h-full object-cover object-center"
-          src="https://picsum.photos/800/500"
+          src={gisement.img_gisement}
           alt={gisement.libs_gisement}
         />
       </figure>
