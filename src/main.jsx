@@ -5,6 +5,9 @@ import Map from "./components/Map/MapView";
 import "./index.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import PrendrePhoto from "./page/PrendrePhoto";
+import AjouterGisement from "./page/AjouterGisement";
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -14,6 +17,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/routes" element={<App />} />
         <Route path="/profile" element={<App />} />
         <Route path={"/map"}  element={<Map />} />
+        <Route path={"/photo"} element={<PrendrePhoto />} />
+        <Route path={"/ajouter-gisement"} element={<AjouterGisement />} />
+
+
       </Routes>
       <Navbar />
     </Router>

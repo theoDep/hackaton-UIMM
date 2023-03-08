@@ -16,7 +16,7 @@ const Map = (props) => {
         lng: 1.3576768
       },
       zoom: 13,
-      data,
+      data:[],
       userLocation: null
     });
   
@@ -94,7 +94,7 @@ const Map = (props) => {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
       />
-           <Markers places={state.data.places}/>
+      <Markers places={state.data.places}/>
 
      {/* Ajouter des marqueurs pour chaque lieu dans les données */}
         
