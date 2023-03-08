@@ -14,7 +14,10 @@ const Markers = (props) => {
   const markers = places.map((place) => (
     <Marker 
     key={place.id_gisement}
-    position={[place.latitude, place.longitude]}
+    position={[
+      place.latitude,
+      place.longitude
+    ]} 
     icon={IconLocation}
     >
       <MarkerPopup data={place}/>

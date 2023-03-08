@@ -18,7 +18,7 @@ const PrendrePhoto = () => {
   return (
     
   
-        <div style={{height: "92vh"}} className=" flex items-center justify-center overflow-hidden pb-10">
+        <div style={{height: "calc(100vh - 3rem)"}} className=" flex items-center justify-center overflow-hidden pb-10">
           <div className="w-full h-screen">
           <Camera 
                 onTakePhoto={handlePrendrePhoto} 
