@@ -19,7 +19,7 @@ export function distance(lat1, lon1, lat2, lon2) {
 
 export default function CardList({ filteredGisements }) {
   return filteredGisements.map((gisement) => (
-    <div key={gisement.id_gisement} className="card card-side bg-base-100 shadow-xl mt-4">
+    <div key={gisement.id_gisement} className="card card-side bg-base-100 shadow-xl mt-4  m-6">
       <figure>
         <img
           className="h-full object-cover object-center"
@@ -32,7 +32,7 @@ export default function CardList({ filteredGisements }) {
         <p className="line-clamp-3">{gisement.desc_gisement}</p>
         <div className="flex justify-between">
           <span>{distance(49.739365, 4.7231979, gisement.latitude, gisement.longitude)} km</span>
-          <Link className="btn btn-sm" to={`/detail/${gisement.id_gisement}`}>
+          <Link className="btn btn-sm bg bg-[#702315] hover:bg-[#49160d]" to={`/detail/${gisement.id_gisement}`}>
             Voir plus
           </Link>
         </div>

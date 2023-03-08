@@ -57,10 +57,10 @@ export default function SearchBar({ gisements }) {
 
   return (
     <>
-      <div className="border rounded overflow-hidden flex">
-        <button className="flex items-center justify-center px-4 border-l">
+      <div className="border rounded overflow-hidden flex sticky top-0 z-10">
+        <button className="flex items-center justify-center px-4 border-l bg-white">
           <svg
-            className="h-4 w-4 text-grey-dark"
+            className="h-4 w-4 text-grey-dark bg-white"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
