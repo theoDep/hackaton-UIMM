@@ -1,9 +1,8 @@
 import { useState } from "react";
-import gisements from "../mock/gisements.json";
 import CardList, { distance } from "./CardList";
 import KmSort from "./KmSort";
 
-export default function SearchBar() {
+export default function SearchBar({ gisements }) {
   const [searchQuery, setSearchQuery] = useState("");
   const [sortState, setSortState] = useState(false);
 
