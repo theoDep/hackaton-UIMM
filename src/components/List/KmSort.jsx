@@ -8,16 +8,19 @@ export default function KmSort({ handleKmSort, sortState, setSortState }) {
   }
 
   return (
-    <button className="btn bg-[#702315] hover:bg-[#49160d]" onClick={() => handleKmClick(sortState)}>
+    <button
+      className="btn rounded-none bg-[#702315] hover:bg-[#49160d]"
+      onClick={() => handleKmClick(sortState)}
+    >
       <span className="mr-2 text-xl">km</span>
       <div className="h-fit">
         <img
-          className={`h-10 ${!sortState ? "hidden" : ""}`}
+          className={`h-8 ${!sortState ? "hidden" : ""}`}
           src={sort_down}
           alt="Filtrage par le moins de kilimètre"
         />
         <img
-          className={`h-10 ${sortState ? "hidden" : ""}`}
+          className={`h-8 ${sortState ? "hidden" : ""}`}
           src={sort_up}
           alt="Filtrage par le plus de kilimètre"
         />

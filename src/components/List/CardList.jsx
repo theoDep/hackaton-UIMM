@@ -19,7 +19,10 @@ export function distance(lat1, lon1, lat2, lon2) {
 
 export default function CardList({ filteredGisements }) {
   return filteredGisements.map((gisement) => (
-    <div key={gisement.id_gisement} className="card card-side bg-base-100 shadow-xl mt-4  m-6">
+    <div
+      key={gisement.id_gisement}
+      className="card card-side grid grid-cols-[45%,55%] bg-base-100 shadow-xl mt-6  mx-6"
+    >
       <figure>
         <img
           className="h-full object-cover object-center"
@@ -27,15 +30,18 @@ export default function CardList({ filteredGisements }) {
           alt={gisement.libs_gisement}
         />
       </figure>
-      <div className="card-body">
+      <div className="card-body p-6">
+        <span className="text-end text-[#702315] font-bold">
+          {distance(49.739365, 4.7231979, gisement.latitude, gisement.longitude)} km
+        </span>
         <h2 className="card-title">{gisement.lib_gisement}</h2>
-        <p className="line-clamp-3">{gisement.desc_gisement}</p>
-        <div className="flex justify-between">
-          <span>{distance(49.739365, 4.7231979, gisement.latitude, gisement.longitude)} km</span>
-          <Link className="btn btn-sm bg bg-[#702315] hover:bg-[#49160d]" to={`/detail/${gisement.id_gisement}`}>
-            Voir plus
-          </Link>
-        </div>
+        <p className="line-clamp-4 mb-2">{gisement.desc_gisement}</p>
+        <Link
+          className="btn btn-sm bg bg-[#702315] hover:bg-[#49160d]"
+          to={`/detail/${gisement.id_gisement}`}
+        >
+          Voir plus
+        </Link>
       </div>
     </div>
   ));
