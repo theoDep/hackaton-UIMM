@@ -21,7 +21,7 @@ export default function ProfileCard({
       <h2 className="text-xl font-bold pb-5">{title}</h2>
       <div className="flex gap-2 flex-wrap justify-center items-center">
         {badges.map((badge) => (
-          <span className="badge p-4" key={crypto.randomUUID}>
+          <span className="badge p-4" key={crypto.randomUUID()}>
             {badge}
           </span>
         ))}
@@ -30,7 +30,10 @@ export default function ProfileCard({
         <h2 className="text-xl font-bold p-5">Mes lieux favoris</h2>
         <div className="flex gap-2 flex-wrap justify-center items-center">
           {favorites.map((favorite) => (
-            <div className="card w-72 bg-base-100 shadow-xl image-full z-0">
+            <div
+              className="card w-72 bg-base-100 shadow-xl image-full z-0"
+              key={crypto.randomUUID()}
+            >
               <figure>
                 <img src="https://picsum.photos/500/200" alt="Shoes" />
               </figure>
@@ -52,7 +55,10 @@ export default function ProfileCard({
         <h2 className="text-xl font-bold p-5">Mes decouvertes</h2>
         <div className="flex gap-2 flex-wrap justify-center items-center">
           {discoveries.map((discovery) => (
-            <div className="card w-72 bg-base-100 shadow-xl image-full z-0">
+            <div
+              className="card w-72 bg-base-100 shadow-xl image-full z-0"
+              key={crypto.randomUUID()}
+            >
               <figure>
                 <img src="https://picsum.photos/500/200" alt="Shoes" />
               </figure>
