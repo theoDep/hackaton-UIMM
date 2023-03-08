@@ -38,7 +38,7 @@ function Navbar() {
         <Link to="/">
           <FontAwesomeIcon icon={faMapPin} className="text-white" />
         </Link>
-        <Link to="/">
+        <Link to="/profile">
           <FontAwesomeIcon icon={faUser} className="text-white" />
         </Link>
       </ul>
