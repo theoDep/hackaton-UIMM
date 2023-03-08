@@ -21,7 +21,7 @@ export default function CardList({ filteredGisements }) {
   return filteredGisements.map((gisement) => (
     <div
       key={gisement.id_gisement}
-      className="card card-side grid grid-cols-[45%,55%] bg-base-100 shadow-xl mt-6  mx-6"
+      className="card card-side grid grid-cols-[45%,55%] bg-base-100 shadow-xl mb-6  mx-6"
     >
       <figure>
         <img
@@ -37,7 +37,7 @@ export default function CardList({ filteredGisements }) {
         <h2 className="card-title">{gisement.lib_gisement}</h2>
         <p className="line-clamp-4 mb-2">{gisement.desc_gisement}</p>
         <Link
-          className="btn btn-sm bg bg-[#702315] hover:bg-[#49160d]"
+          className="btn btn-sm border-none bg-[#702315] hover:bg-[#49160d]"
           to={`/detail/${gisement.id_gisement}`}
         >
           Voir plus
