@@ -65,7 +65,7 @@ export default function SearchBar({ gisements }) {
           </button>
           <input
             type="text"
-            className="px-4 w-full py-2 focus:outline-[#702315]"
+            className="px-4 w-full py-2 focus:outline-primary"
             placeholder="Rechercher..."
             value={searchQuery}
             onChange={handleSearchChange}

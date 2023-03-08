@@ -9,7 +9,7 @@
   },
   {
     "id_gisement": 2,
-    "lib_gisement": "Villa gallo-romaine de Montmaurin",
+    "lib_gisement": "Villa gallo-romaine",
     "desc_gisement": "La villa gallo-romaine de Montmaurin est un site archéologique situé en Haute-Garonne, en France, qui témoigne de la vie quotidienne des gallo-romains.",
     "latitude": 43.203646,
     "longitude": 0.787807,
@@ -89,7 +89,7 @@
   },
   {
     "id_gisement": 12,
-    "lib_gisement": "Abbaye de Saint-Michel-en-Thiérache",
+    "lib_gisement": "Abbaye de Saint-Michel",
     "desc_gisement": "L'abbaye de Saint-Michel-en-Thiérache est une ancienne abbaye située dans les Ardennes françaises. Elle a été fondée au VIIe siècle et a été le centre spirituel de la région pendant des siècles. L'abbaye a été restaurée et peut être visitée aujourd'hui. Les visiteurs peuvent y voir des cloîtres, des chapelles et des bibliothèques, ainsi que des expositions sur l'histoire relig",
     "latitude": 49.93639,
     "longitude": 4.03778,

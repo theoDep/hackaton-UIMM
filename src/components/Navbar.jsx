@@ -16,7 +16,7 @@ function Navbar() {
   return (
     <>
       <div className="h-24" />
-      <nav className="fixed h-[3rem] w-screen bottom-0 bg-[#702315] small-height:hidden">
+      <nav className="fixed h-[3rem] w-screen bottom-0 bg-primary small-height:hidden">
         <ul className="flex items-center justify-evenly h-[3rem]">
           <Link to="/">
             <FontAwesomeIcon icon={faHome} className="text-white" />
@@ -26,10 +26,10 @@ function Navbar() {
           </Link>
           <Link
             to="/photo"
-            className="bg-white text-3xl p-8 rounded-full border-[3px] border-[#702315]
+            className="bg-white text-3xl p-8 rounded-full border-[3px] border-primary
         border-solid"
           >
-            <FontAwesomeIcon icon={faCameraRetro} className="text-[#702315]" />
+            <FontAwesomeIcon icon={faCameraRetro} className="text-primary" />
           </Link>
           <Link to="/list">
             <FontAwesomeIcon icon={faMapPin} className="text-white" />

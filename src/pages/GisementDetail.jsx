@@ -8,7 +8,7 @@ export default function GisementDetail() {
 
   return (
     <section className="flex justify-center flex-col">
-      <h1 className="text-center font-semibold my-6 font-custom text-2xl text-[#702315] mb-0">
+      <h1 className="text-center font-semibold my-6 font-custom text-2xl text-primary mb-0">
         {gisement.lib_gisement}
       </h1>
       <div className="avatar ">
@@ -17,17 +17,17 @@ export default function GisementDetail() {
         </div>
       </div>
       <div>
-        <h2 className="text-2xl text-center my-6 bg-[#702315] p-2 text-white mb-0 rounded-t-2xl m-8">
+        <h2 className="text-2xl text-center my-6 bg-primary p-2 text-white mb-0 rounded-t-2xl m-8">
           Description
         </h2>
-        <div className="card bg-base-100 shadow-2xl m-8 p-6 mt-0 rounded-t-none">
+        <div className="card bg-base-100 shadow-2xl m-8 mt-0 rounded-t-none">
           <div className="card-body">
             <p>{gisement.desc_gisement}</p>
           </div>
         </div>
         <h2 className="text-2xl text-center my-6">Coordonnées</h2>
-        <div className="w-full bg-base-100 shadow-2xl">
-          <div className="card-body mx-8 shadow-2xl rounded-xl bg-[#702315] text-white text-center">
+        <div className="w-full bg-base-100">
+          <div className="card-body mx-8 shadow-2xl rounded-xl bg-primary text-white text-center">
             <p>Latitude : {gisement.latitude}</p>
             <p>Longitude : {gisement.longitude}</p>
           </div>

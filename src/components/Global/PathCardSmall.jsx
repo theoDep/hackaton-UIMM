@@ -8,7 +8,7 @@ export default function PathCardSmall({ lib_parcours, img_parcours, desc_parcour
       key={crypto.randomUUID()}
     >
       <figure>
-        <img src={`../../assets/images/${img_parcours}`} alt={lib_parcours} />
+        <img src="https://source.unsplash.com/900x900/?valley" alt={lib_parcours} />
       </figure>
       <div className="card-body h-fit">
         <div className="card-actions justify-end">

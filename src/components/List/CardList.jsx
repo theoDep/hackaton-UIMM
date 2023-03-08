@@ -23,15 +23,14 @@ export default function CardList({ filteredGisements }) {
       key={gisement.id_gisement}
       className="card card-side grid grid-cols-[45%,55%] bg-base-100 shadow-xl mb-6  mx-6"
     >
-      <figure>
-        <img
-          className="h-full object-cover object-center"
-          src={gisement.img_gisement}
-          alt={gisement.libs_gisement}
-        />
-      </figure>
+      <img
+        className="rounded-l-2xl object-cover object-center"
+        src={gisement.img_gisement}
+        alt={gisement.libs_gisement}
+      />
+
       <div className="card-body p-6">
-        <span className="text-end text-[#702315] font-bold">
+        <span className="text-end text-primary font-bold">
           {distance(49.739365, 4.7231979, gisement.latitude, gisement.longitude)} km
         </span>
         <h2 className="card-title">{gisement.lib_gisement}</h2>
