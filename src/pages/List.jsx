@@ -1,5 +1,5 @@
-import SearchBar from "../components/SearchBar";
-import gisements from "../mock/gisements.json";
+import SearchBar from "../components/List/SearchBar";
+import gisements from "../mocks/gisements.json";
 
 export default function List() {
   return (
