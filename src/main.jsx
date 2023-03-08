@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
+import List from "./pages/List";
+import GisementDetail from "./pages/GisementDetail";
 import Profile from "./pages/Profile";
 import Home from "./pages/Homepage";
 import "./index.css";
@@ -16,6 +18,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/" element={<Home />} />
           <Route path="/routes" element={<App />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/list" element={<List />} />
+          <Route path="/detail/:gisementId" element={<GisementDetail />} />
         </Routes>
         <Navbar />
       </Router>

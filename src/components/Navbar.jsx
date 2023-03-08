@@ -1,12 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCameraRetro,
-  faHome,
-  faUser,
-  faMap,
-  faMapPin,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCameraRetro, faHome, faUser, faMap, faMapPin } from "@fortawesome/free-solid-svg-icons";
 
 const link = (icon, url, clickHandler = null, style = "") => (
   <li className={`text-white text-2xl ${style}`}>
@@ -37,7 +31,7 @@ function Navbar() {
           >
             <FontAwesomeIcon icon={faCameraRetro} className="text-[#702315]" />
           </Link>
-          <Link to="/">
+          <Link to="/list">
             <FontAwesomeIcon icon={faMapPin} className="text-white" />
           </Link>
           <Link to="/profile">
