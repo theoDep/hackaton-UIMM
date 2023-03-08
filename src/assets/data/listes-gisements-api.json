@@ -1,0 +1,52 @@
+[
+    {
+        "id_gisement" : 1,
+        "lib_gisement" : "Chez Brice",
+         "geometry": [
+            49.77388333333333,
+            4.7190611111111114
+
+        ]
+       
+    },
+    {
+        "id_gisement" : 2,
+        "lib_gisement" : "Pôle Formation",
+        "geometry": [
+            49.739094,
+            4.720404
+
+        ]
+        
+    },
+    {
+        "id_gisement" : 3,
+        "lib_gisement" : "Pôle Formation bis",
+        "geometry": [
+            49.739697,
+            4.720966
+
+        ]
+   
+    },
+    {
+        "id_gisement" : 4,
+        "lib_gisement" : "Pôle Formation ter",
+        "geometry": [
+            49.740799,
+            4.722017
+
+        ]
+     
+    },
+    {
+        "id_gisement" : 5,
+        "lib_gisement" : "Le Gallion",
+        "geometry": [
+            49.735816666666665,
+            4.721791666666666
+
+        ]
+        
+    }
+]
