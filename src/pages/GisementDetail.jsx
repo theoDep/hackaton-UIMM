@@ -1,5 +1,5 @@
 import { useParams } from "react-router";
-import gisements from "../mock/gisements.json";
+import gisements from "../mocks/gisements.json";
 import React from "react";
 
 export default function GisementDetail() {
