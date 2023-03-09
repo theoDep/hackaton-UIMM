@@ -24,7 +24,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/profile" element={<Profile />} />
           <Route path="/list" element={<List />} />
           <Route path="/detail/:gisementId" element={<GisementDetail />} />
-          <Route path={"/map"}  element={<Map />} />
+          <Route path={"/map"}  element={<Map/>} />
           <Route path={"/photo"} element={<PrendrePhoto />} />
           <Route path={"/ajouter-gisement"} element={<AjouterGisement />} />
         </Routes>

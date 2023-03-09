@@ -1,0 +1,17 @@
+[
+    {
+        "id_parcours": 1,
+        "lib_parcours": "Grand parcours",
+        "liste_emplacements": [1,2,3]
+    },
+    {
+        "id_parcours": 1,
+        "lib_parcours": "Parcours local Formation",
+        "liste_emplacements": [2,3,4]
+    },
+    {
+        "id_parcours": 1,
+        "lib_parcours": "Parcours Travail Bouffe Travail",
+        "liste_emplacements": [4,5,3,2]
+    }
+]
