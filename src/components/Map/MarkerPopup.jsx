@@ -11,13 +11,13 @@ const MarkerPopup = (props) => {
 
   return (
     <Popup>
-      <div className="text-center text-xl font-bold">{lib_gisement}</div>
+      <div className="text-center text-xl font-bold w-48">{lib_gisement}</div>
       <div className="avatar flex my-5">
         <div className="w-40 rounded m-auto">
           <img src={img_gisement} alt={lib_gisement} />
         </div>
       </div>
-      <div className="my-5 text-center line-clamp-3 w-48">{desc_gisement}</div>
+      <div className="my-5 text-center line-clamp-3 w-48 m-auto">{desc_gisement}</div>
       <div className="flex m-2 ">
         <Link
           className="m-auto link text-primary hover:text-[#49160d]"
