@@ -4,7 +4,6 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import Markers from './Markers';
 import data from '../../assets/data/listes-gisements-api.json';
-import { useLocation, useNavigate } from 'react-router-dom';
 import IconLocation from '../../assets/images/pointer.svg';
 
 const MapView = (props) => {
@@ -34,7 +33,7 @@ const MapView = (props) => {
       (error) => {
         setState(prevState => ({
           ...prevState,
-          userLocationError: 'Nous ne pouvons pas récupérer votre position actuelle. Veuillez autoriser la géolocalisation pour utiliser cette fonctionnalité.'
+          userLocation: prevState.currentLocation
         }));
       }
     );
@@ -54,7 +53,7 @@ const MapView = (props) => {
           <Marker position={userLocation} icon={L.icon({iconUrl: IconLocation, iconSize: [32, 32]})}>
             <Popup>Votre position</Popup>
           </Marker>
-          <Circle center={userLocation} radius={10000} />
+          {/* <Circle center={userLocation} radius={10000} /> */}
           <Markers places={state.data}/>
         </MapContainer>
       )}
