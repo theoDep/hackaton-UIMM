@@ -12,7 +12,7 @@ import UserContextProvider from "./contexts/UserContext";
 import Navbar from "./components/Navbar";
 import PrendrePhoto from "./page/PrendrePhoto";
 import AjouterGisement from "./page/AjouterGisement";
-
+import Badges from "./page/Badges";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -24,9 +24,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/profile" element={<Profile />} />
           <Route path="/list" element={<List />} />
           <Route path="/detail/:gisementId" element={<GisementDetail />} />
-          <Route path={"/map"}  element={<Map />} />
+          <Route path={"/map"} element={<Map />} />
           <Route path={"/photo"} element={<PrendrePhoto />} />
           <Route path={"/ajouter-gisement"} element={<AjouterGisement />} />
+          <Route path={"/badges"} element={<Badges />} />
         </Routes>
         <Navbar />
       </Router>
