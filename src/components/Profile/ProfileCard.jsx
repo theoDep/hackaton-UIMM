@@ -1,17 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart, faStar } from "@fortawesome/free-solid-svg-icons";
 
-export default function ProfileCard({
-  username,
-  avatar,
-  title,
-  badges,
-  favorites,
-  discoveries,
-}) {
+export default function ProfileCard({ username, avatar, title, badges, favorites, discoveries }) {
   return (
     <div className="flex border items-center justify-center flex-col p-8">
-      <p>Bon retour</p>
+      <p className="text-primary">Bon retour</p>
       <h1 className="text-2xl font-bold">{username}</h1>
       <div className="avatar p-4">
         <div className="w-24 rounded-full">
@@ -40,10 +33,7 @@ export default function ProfileCard({
               <div className="card-body">
                 <div className="card-actions justify-end">
                   <button className="">
-                    <FontAwesomeIcon
-                      icon={faHeart}
-                      className="text-red-500 text-2xl"
-                    />
+                    <FontAwesomeIcon icon={faHeart} className="text-red-500 text-2xl" />
                   </button>
                 </div>
                 <h2 className="card-title">Shoes!</h2>
@@ -65,10 +55,7 @@ export default function ProfileCard({
               <div className="card-body">
                 <div className="card-actions justify-end">
                   <button className="">
-                    <FontAwesomeIcon
-                      icon={faStar}
-                      className="text-yellow-500 text-2xl"
-                    />
+                    <FontAwesomeIcon icon={faStar} className="text-yellow-500 text-2xl" />
                   </button>
                 </div>
                 <h2 className="card-title">Shoes!</h2>

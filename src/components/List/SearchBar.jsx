@@ -42,15 +42,9 @@ export default function SearchBar({ gisements }) {
 
   function handleKmSort() {
     const sortedGisements = [...filteredGisements].sort((a, b) => {
-      const distA = distance(49.739365, 4.7231979, a.latitude, b.longitude);
+      const distA = distance(49.739365, 4.7231979, a.latitude, a.longitude);
       const distB = distance(49.739365, 4.7231979, b.latitude, b.longitude);
-      if (distA > distB) {
-        return sortState ? -1 : 1;
-      }
-      if (distA < distB) {
-        return sortState ? 1 : -1;
-      }
-      return 0;
+      return sortState ? distB - distA : distA - distB;
     });
     return sortedGisements;
   }
@@ -71,7 +65,7 @@ export default function SearchBar({ gisements }) {
           </button>
           <input
             type="text"
-            className="px-4 w-full py-2 focus:outline-[#702315]"
+            className="px-4 w-full py-2 focus:outline-primary"
             placeholder="Rechercher..."
             value={searchQuery}
             onChange={handleSearchChange}

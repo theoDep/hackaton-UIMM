@@ -3,19 +3,18 @@
 @tailwind utilities;
 
 .leaflet-container {
-    width: 100%;
-    height: calc(100vh - 3rem);
-
-  }
-
-.leaflet-container a {
-  color: none;
+  width: 100%;
+  height: calc(100vh - 3rem);
 }
 
-  .boutonpopup {
-    color: white !important;
-  }
+.leaflet-container a {
+  color: #702315;
+}
 
-  .leaflet-pane { z-index: 0 !important; }
+.boutonpopup {
+  color: white !important;
+}
 
-
+.leaflet-pane {
+  z-index: 0 !important;
+}
