@@ -1,5 +1,5 @@
 import L from 'leaflet'
-import iconUrl from '../../assets/images/gisement.png';
+import iconUrl from '../../assets/images/icon_1.png';
 
 
 export const IconLocation = L.icon({
