@@ -25,6 +25,7 @@ export default function ProfileCard({ username, avatar, title, favorites, discov
           <div className="w-24 rounded-full">
             <img src={avatar} />
           </div>
+
         </div>
         <h2 className="text-xl font-bold pb-5">{title}</h2>
         <div className="flex gap-2 flex-wrap justify-center items-center">
