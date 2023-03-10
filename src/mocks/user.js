@@ -5,5 +5,4 @@ export const userData = {
   title: "Archéologue en herbe",
   badges: ["Merovigien", "Gallo-Romains", "Promeneur curieux"],
   favorites: [1, 2],
-  discoveries: [1, 2],
 };

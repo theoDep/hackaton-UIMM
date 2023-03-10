@@ -18,3 +18,7 @@
 .leaflet-pane {
   z-index: 0 !important;
 }
+
+#outer-circle {
+  top: -20px;
+}
