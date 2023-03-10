@@ -22,6 +22,11 @@ const AjouterGisement = () => {
   const navigate = useNavigate();
 
   const onSubmit = async (data) => {
+    if (!isGeolocationEnabled) {
+      alert("La géolocalisation n'est pas activée");
+      return;
+    }
+
     const { latitude, longitude, altitude } = coords;
 
     const response = await fetch(photo);

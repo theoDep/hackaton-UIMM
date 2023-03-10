@@ -141,8 +141,8 @@ export default function ProfileCard() {
                     </div>
                     <h2 className="card-title">{discovery.attributes.name}</h2>
                     <p>{discovery.attributes.description}</p>
-                    <p>X: {discovery.attributes.latitude.toFixed(2)}</p>
-                    <p>Y: {discovery.attributes.longitude.toFixed(2)}</p>
+                    <p>X: {discovery.attributes.latitude.toFixed(6)}</p>
+                    <p>Y: {discovery.attributes.longitude.toFixed(6)}</p>
                   </div>
                 </div>
               ))}
