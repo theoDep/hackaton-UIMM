@@ -15,8 +15,7 @@ export default function Homepage() {
               <img className="w-full h-full" src={logo} alt="logo" />
             </div>
             <p className="px-8 pb-8 font-bold">
-              Rejoignez une communaute de plus de 1239 passionnes de la nature et venez partager vos
-              decouvertes !
+            Rejoignez une communauté de plus de 1239 passionnés de la nature et venez partager vos découvertes !
             </p>
             <button className="btn btn-primary">Commencer l'aventure</button>
           </div>
@@ -24,7 +23,7 @@ export default function Homepage() {
       </div>
       <section>
         <div className="px-14 flex gap-5 flex-col">
-          <p className="m-auto">Decouvrez nos derniers parcours</p>
+          <p className="m-auto">Découvrez nos derniers parcours</p>
           {paths.map((path) => (
             <PathCardSmall key={crypto.randomUUID()} {...path} />
           ))}
